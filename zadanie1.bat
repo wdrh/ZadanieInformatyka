@@ -139,4 +139,4 @@ goto menu
 :: oto wysylam okazalo sie ze problemem byl komentarz za ifem w jednej linii ale przy okazji w miare 
 :: zoptymalizowalem kod naprawiajac kilka bledow ktore sam sobie stworzylem probujac naprawic kod i 
 :: przy okazji sortowanie dziala tak jakby sortowalo litery czyli patrzy na pierwsza cyfre
-:: przepraszam za klopot milego dnia!
+:: milego dnia!
