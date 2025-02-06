@@ -97,6 +97,7 @@ echo.
 echo %nick%, zgadles w %proby% probach,%dobry_wieczor%uzywajac podpowiedzi.
 
 set rekord=999999
+:: pierwszy wynik jaki pan uzyska bedzie zawsze rekordem
 
 for /f "tokens=1" %%a in (wyniki_posortowane.txt) do (
     if %%a lss %rekord% set rekord=%%a
@@ -141,5 +142,6 @@ if exist wyniki.txt (
 pause
 goto menu
 :: oto wysylam okazalo sie ze problemem byl komentarz za ifem w jednej linii ale przy okazji w miare 
-:: zoptymalizowalem kod naprawiajac kilka bledow ktore sam sobie stworzylem probujac naprawic kod 
-::przepraszam za klopot milego dnia!
+:: zoptymalizowalem kod naprawiajac kilka bledow ktore sam sobie stworzylem probujac naprawic kod i 
+:: przy okazji sortowanie dziala tak jakby sortowalo litery czyli patrzy na pierwsza cyfre
+:: przepraszam za klopot milego dnia!
