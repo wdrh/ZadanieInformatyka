@@ -107,7 +107,7 @@ if %proby% lss %rekord% (
     echo BRAWO, pobiles rekord zgadujac w mniej niz %rekord% probach
 )
 echo.
-echo a to cała sciana wynikow:
+echo a to cala sciana wynikow:
 echo %proby% %nick% >> wyniki.txt
 
 sort wyniki.txt /o wyniki_posortowane.txt
@@ -130,14 +130,9 @@ echo       "888 888    888  888     d88P   888 888  Y88888   d88P   888      888
 echo Y88b  d88P Y88b  d88P  888    d8888888888 888   Y8888  d8888888888      8888P   Y8888     888     888   Y8888   888   888   Y88b  Y88b. .d88P 8888P   Y8888        
 echo  "Y8888P"   "Y8888P" 8888888 d88P     888 888    Y888 d88P     888      888P     Y888     888     888    Y888 8888888 888    Y88b  "Y88888P"  888P     Y888      
 echo.
-echo SCIANA WYNIKOW:
-if exist wyniki.txt (
-    sort wyniki.txt /o wyniki_posortowane.txt
-    for /f "tokens=1,2" %%a in (wyniki_posortowane.txt) do (
-        echo %%b - %%a
-    )
-) else (
-    echo Brak zapisanych wynikow.
+sort wyniki.txt /o wyniki_posortowane.txt
+for /f "tokens=1,2" %%a in (wyniki_posortowane.txt) do (
+    echo %%b - %%a
 )
 pause
 goto menu
